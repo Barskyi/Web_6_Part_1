@@ -18,7 +18,7 @@ def main():
         cur = conn.cursor()
 
         """ Adding data to tables """
-        # Додавання даних у таблиці
+        
         for _ in range(3):
             cur.execute("INSERT INTO groups (name) VALUES (%s)", (fake.word(),))
 
